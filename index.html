@@ -3,7 +3,51 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Подстрижи Ме — Груминг Салон</title>
+
+<!-- ═══ SEO: Title + Meta ═══ -->
+<title>Подстрижи Ме — Груминг Салон за Кучета, Котки и Гризачи | София</title>
+<meta name="description" content="Професионален груминг салон в София — подстригване, къпане и грижа за кучета, котки, зайци и морски свинчета. Сертифициран грумър, работи с всички породи и трудно поведение. ул. „Шар планина" 75.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://podstrijime.bg/">
+
+<!-- ═══ SEO: Open Graph (social sharing) ═══ -->
+<meta property="og:type"        content="website">
+<meta property="og:locale"      content="bg_BG">
+<meta property="og:title"       content="Подстрижи Ме — Груминг Салон в София">
+<meta property="og:description" content="Професионален груминг салон в София — подстригване и грижа за кучета, котки и гризачи. Сертифициран грумър, приема животни с трудно поведение.">
+<meta property="og:url"         content="https://podstrijime.bg/">
+<meta property="og:image"       content="logo3.jpg">
+
+<!-- ═══ SEO: LocalBusiness structured data ═══ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AnimalShelter",
+  "name": "Подстрижи ме!",
+  "alternateName": "Груминг салон Подстрижи ме",
+  "description": "Професионален груминг салон в София за кучета, котки, зайци и морски свинчета. Подстригване, къпане, разресване, почистване на уши и нокти.",
+  "url": "https://podstrijime.bg/",
+  "telephone": "+359878688480",
+  "email": "podstrijime@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "ул. Шар планина 75",
+    "addressLocality": "София",
+    "addressRegion": "София-град",
+    "addressCountry": "BG"
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "09:00",
+    "closes": "17:00"
+  },
+  "priceRange": "€€",
+  "image": "logo3.jpg",
+  "sameAs": ["https://www.instagram.com/podstrizhi.me/"]
+}
+</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,400&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet">
 <style>
@@ -139,7 +183,7 @@
   .team-photo{overflow:hidden;min-height:340px}
   .team-photo img{width:100%;height:100%;object-fit:cover;object-position:top center}
   .team-content{padding:38px 34px}
-  .team-name{font-size:1.75rem;font-weight:700;margin-bottom:4px;color:var(--dark)}
+  .team-name{font-size:1.75rem;font-weight:700;margin-bottom:4px;color:var(--dark);font-family:'Nunito',sans-serif}
   .team-role{display:inline-block;background:var(--teal-ll);color:var(--teal-d);padding:5px 18px;border-radius:50px;font-size:.78rem;font-weight:800;margin-bottom:18px}
   .team-bio{font-size:.9rem;color:var(--text-s);line-height:1.75}
   .team-skills{display:flex;flex-wrap:wrap;gap:7px;margin-top:18px}
@@ -155,7 +199,7 @@
   .sc-gold::before{background:linear-gradient(90deg,var(--yellow),#d0a020)}
   .service-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-h)}
   .service-icon{font-size:2.5rem;margin-bottom:16px;display:block;flex-shrink:0}
-  .service-title{font-size:1.28rem;font-weight:700;margin-bottom:14px;flex-shrink:0}
+  .service-title{font-size:1.28rem;font-weight:700;margin-bottom:14px;flex-shrink:0;font-family:'Nunito',sans-serif}
   .service-list{list-style:none;flex:1;display:flex;flex-direction:column}
   .service-list li{display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px solid rgba(29,107,107,.06);font-size:.88rem;flex:1}
   .service-list li:last-child{border-bottom:none}
@@ -680,6 +724,7 @@
   }
 </style>
 
+
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 
@@ -689,6 +734,7 @@
 <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
 
 <link rel="shortcut icon" href="favicon.ico">
+
 </head>
 <body>
 
@@ -704,9 +750,9 @@
 </div>
 
 <!-- NAV -->
-<nav id="main-nav">
+<nav id="main-nav" aria-label="Главна навигация">
   <a href="#hero" class="nav-logo">
-    <img src="logo.jpg" alt="Подстрижи ме лого">
+    <img src="logo.jpg" alt="Подстрижи ме — груминг салон за домашни любимци">
     <span class="nav-logo-text">Подстрижи<span> ме!</span></span>
   </a>
   <ul class="nav-links">
@@ -741,9 +787,10 @@
         Професионална грижа<br>за <em>всеки</em><br>любимец
       </h1>
       <p class="hero-sub reveal" style="transition-delay:.2s">
-        Кучета, котки, зайци и морски свинчета - всяко животинче заслужава
-        индивидуално внимание и любов. Работим с възрастни животни, животни с увреждания
-        или трудно поведение. Всички са добре дошли в нашия салон, където грижата и разбирането са на първо място.
+        Кучета, котки, зайци и морски свинчета — всяко животинче заслужава
+        индивидуално внимание и любов. Нашият груминг салон в София работи с възрастни животни,
+        животни с увреждания или трудно поведение. Всички са добре дошли,
+        където грижата и разбирането са на първо място.
       </p>
       <div class="hero-btns reveal" style="transition-delay:.3s">
         <a href="#contact" class="btn-primary">Свържи се с нас</a>
@@ -767,7 +814,7 @@
     </div>
     <div class="hero-visual reveal-right" style="transition-delay:.15s">
       <div class="hero-logo-circle">
-        <img src="logo3.jpg" alt="Подстрижи ме лого">
+        <img src="logo3.jpg" alt="Подстрижи ме — груминг салон за домашни любимци в София">
       </div>
     </div>
   </div>
@@ -779,7 +826,7 @@
     <div class="about-grid">
       <div class="about-visual reveal-left">
         <div class="about-main-img">
-          <img src="zanas.jpg" alt="Salona" loading="lazy">
+          <img src="zanas.jpg" alt="Интериор на груминг салон Подстрижи ме в София" loading="lazy">
           <div class="about-badge-white">
             <div class="icon">🎓</div>
             <div>
@@ -795,8 +842,8 @@
         <p class="section-sub" style="margin:14px 0">
           Салон <strong>„Подстрижи ме!"</strong> е роден от чиста любов към животните
           и вдъхновен от личния опит с много кучета. Нашата мисия е
-          да създадем пространство, в което всеки любимец се чувства
-          спокоен, безопасен и обичан - независимо от порода или характер. Работим само с най-висококачествените продукти на специализираната марка "ARTERO".
+          да създадем пространство в София, в което всеки любимец се чувства
+          спокоен, безопасен и обичан — независимо от порода или характер. Работим само с най-висококачествените продукти на специализираната марка „ARTERO".
         </p>
         <div class="about-tags">
           <span class="tag tag-t">🐶 Кучета</span>
@@ -839,7 +886,7 @@
           <img src="petq.jpg" alt="Петя — главен грумер" loading="lazy">
         </div>
         <div class="team-content">
-          <div class="team-name">Петя</div>
+          <h3 class="team-name">Петя</h3>
           <div class="team-role">🐾 Главен грумер & Основател</div>
           <p class="team-bio">
             Заобиколена от животни от малка, намерих призванието си
@@ -874,7 +921,7 @@
     <div class="services-grid">
       <div class="service-card sc-teal reveal" style="transition-delay:.05s">
         <span class="service-icon">🐶</span>
-        <div class="service-title">Кучета</div>
+        <h3 class="service-title">Кучета</h3>
         <ul class="service-list">
           <li>Kъпане <span class="price pt">15 - 35 €  /  29.34 - 68.45 лв</span></li>
           <li>Kъпане и разресване <span class="price pt">20 - 55 €  / 39.12 - 107.57 лв</span></li>
@@ -888,7 +935,7 @@
       </div>
       <div class="service-card sc-teal reveal" style="transition-delay:.1s">
         <span class="service-icon">🐱</span>
-        <div class="service-title">Котки</div>
+        <h3 class="service-title">Котки</h3>
         <ul class="service-list">
           <li>Kъпане<span class="price pt">15 - 20 €  /  29.34  лв</span></li>
           <li>Подстригване <span class="price pt">15 - 35 € /  29.34 - 68.45 лв</span></li>
@@ -903,7 +950,7 @@
       </div>
       <div class="service-card sc-teal reveal" style="transition-delay:.15s">
         <span class="service-icon">🐰🐹</span>
-        <div class="service-title">Гризачи</div>
+        <h3 class="service-title">Гризачи</h3>
         <ul class="service-list">
           <li>Kъпане<span class="price pt">10 - 20 €  /  19.56 - 39.12 лв</span></li>
           <li>Подстригване<span class="price pt">10 - 20 €  /  19.56 - 39.12 лв</span></li>
@@ -997,7 +1044,7 @@
        <a class="ig-card reveal" href="https://www.instagram.com/podstrizhi.me/reel/DXW35TjDO2y/" target="_blank" rel="noopener noreferrer" style="transition-delay:.05s">
         <div class="ig-thumb">
           <!-- Замени src с реален thumbnail (напр. reel1_thumb.jpg) -->
-          <img src="tumb2.jpg" alt="Instagram Reel 1 — @podstriji_me" loading="lazy"
+          <img src="tumb2.jpg" alt="Instagram Reel 2 — груминг за домашни любимци @podstriji_me" loading="lazy"
                onerror="this.style.display='none'">
           <!-- Fallback gradient (показва се ако няма thumbnail) -->
           
@@ -1027,7 +1074,7 @@
        <a class="ig-card reveal" href="https://www.instagram.com/podstrizhi.me/reel/DXW3EJEDN6x/" target="_blank" rel="noopener noreferrer" style="transition-delay:.05s">
         <div class="ig-thumb">
           <!-- Замени src с реален thumbnail (напр. reel1_thumb.jpg) -->
-          <img src="tumb3.jpg" alt="Instagram Reel 1 — @podstriji_me" loading="lazy"
+          <img src="tumb3.jpg" alt="Instagram Reel 3 — груминг за домашни любимци @podstriji_me" loading="lazy"
                onerror="this.style.display='none'">
           <!-- Fallback gradient (показва се ако няма thumbnail) -->
           
@@ -1079,7 +1126,7 @@
     <div class="gallery-header reveal">
       <div class="section-label">Галерия</div>
       <h2 class="section-title">Красиви резултати,<br>щастливи любимци</h2>
-      <p class="gallery-sub">Реални снимки от нашия салон „Подстрижи ме!"</p>
+      <p class="gallery-sub">Реални снимки от груминг салон „Подстрижи ме!" в София</p>
     </div>
     <div class="gallery-grid" id="galleryGrid"></div>
   </div>
@@ -1099,21 +1146,21 @@
             <div class="ci-icon">📞</div>
             <div>
               <div class="ci-label">Телефон</div>
-              <div class="ci-value">+359 87 868 8480</div>
+              <div class="ci-value"><a href="tel:+359878688480" style="color:inherit;text-decoration:none">+359 87 868 8480</a></div>
             </div>
           </div>
           <div class="contact-item">
             <div class="ci-icon">✉️</div>
             <div>
               <div class="ci-label">Имейл</div>
-              <div class="ci-value">podstrijime@gmail.com</div>
+              <div class="ci-value"><a href="mailto:podstrijime@gmail.com" style="color:inherit;text-decoration:none">podstrijime@gmail.com</a></div>
             </div>
           </div>
           <div class="contact-item">
             <div class="ci-icon">📍</div>
             <div>
               <div class="ci-label">Адрес</div>
-              <div class="ci-value">гр. София, ул. „Шар планина" 75</div>
+              <div class="ci-value"><address style="font-style:normal">гр. София, ул. „Шар планина" 75</address></div>
             </div>
           </div>
           <div class="contact-item">
@@ -1145,7 +1192,7 @@
 <!-- FOOTER -->
 <footer>
   <div class="footer-logo">
-    <img src="logo.jpg" alt="лого">
+    <img src="logo.jpg" alt="Подстрижи ме — груминг салон София лого">
     <span style="color:rgba(255,255,255,.45)">Груминг Салон <span>„Подстрижи ме!"</span></span>
   </div>
   <p>© 2026 Направен с <span>❤️</span> за всеки любимец в София</p>
@@ -1237,7 +1284,7 @@ function createItem(src, index){
   const img = document.createElement("img");
   img.src = src;
   img.loading = "lazy";
-  img.alt = "Галерия снимка " + (index + 1);
+  img.alt = "Груминг салон Подстрижи ме София — снимка " + (index + 1);
   img.decoding = "async";
 
   /* Broken image fallback */
